@@ -28,17 +28,14 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
 2. **Publish Assets and Configuration**:
    Publish the package's assets and configuration files:
 
-   ```bash
-  
+   ```bash  
   php artisan vendor:publish --provider="Ramiz\Laravelstarter\LaravelStarterServiceProvider"
-  
-  
+   
    ```
 
 
 3. **Run Migrations**:
    Run the package migrations to create the necessary database tables:
-
 
    ```bash
    php artisan migrate
@@ -51,7 +48,7 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
 
 ### User Authentication
 
-The package provides user authentication routes and views out of the box. You can customize the authentication views by modifying the published view files in your project's `resources/views/auth` directory.
+The package provides user authentication routes and views out of the box. You can customize the authentication views by modifying the published view files in your project's `resources/views` directory.
 
 ### Admin Panel
 
@@ -61,7 +58,3 @@ The admin panel starter template can be accessed by login in your browser. It in
 ## License
 
 This package is open-source software licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to add more sections or details as needed to provide comprehensive information about your package. Make sure to replace placeholders (`your-vendor`, `your-package-name`, `your-package-tag`, etc.) with the actual values corresponding to your package. Additionally, update the license information and provide relevant links to your GitHub repository or documentation.
