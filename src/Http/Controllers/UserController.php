@@ -22,7 +22,9 @@ class UserController extends Controller
     public function register(Request $request)
     {
         User::create($request->all());
-        return to_route('login');
+        $credentials = $request->only('email', 'password');
+        Auth::attempt($credentials);
+        return to_route('dashboard');
     }
 
     public function destroy(string $id)
