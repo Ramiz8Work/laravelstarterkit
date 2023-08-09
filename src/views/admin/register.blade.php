@@ -22,19 +22,9 @@
                                     <div class="card-body">
                                         <form action="{{ route('attemptRegister') }}" method="post">
                                             @csrf
-                                            <div class="row mb-3">
-                                                <div class="col-md-6">
-                                                    <div class="form-floating mb-3 mb-md-0">
-                                                        <input name="FirstName" class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
-                                                        <label for="inputFirstName">First name</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-floating">
-                                                        <input name="LastName" class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
-                                                        <label for="inputLastName">Last name</label>
-                                                    </div>
-                                                </div>
+                                            <div class="form-floating mb-3">
+                                                <input name="name" class="form-control" id="inputEmail" type="text" />
+                                                <label for="inputEmail">Name</label>
                                             </div>
                                             <div class="form-floating mb-3">
                                                 <input name="email" class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
