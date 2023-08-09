@@ -24,7 +24,7 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
    Publish the package's assets:
 
    ```bash  
-    php artisan vendor:publish --provider="Ramiz\Laravelstarter\LaravelStarterServiceProvider"
+    php artisan vendor:publish --provider="Ramiz\LaravelStarter\LaravelStarterServiceProvider"
    ```
 
 3. **Run Migrations**:
