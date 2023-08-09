@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use Ramiz\LaravelStarter\Http\Controllers\UserController;
+use App\Http\Controllers\UserController;
 
 Route::get('/',function () {
     return view('admin/login');
