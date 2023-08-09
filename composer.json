@@ -1,0 +1,25 @@
+{
+    "name": "ramiz/laravelstarterkit",
+    "description": "its a starter kit",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ramiz\\Laravelstarter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ramiz Belim"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ramiz\\Laravelstarter\\LaravelStarterProvider"
+            ]
+        }
+    }
+}
