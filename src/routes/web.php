@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\UserController;
 
 Route::get('/login',function () {
-    return view('admin/login');
+    return view('auth.login');
 })->name('login');
 
 Route::get('/logout',function () {
@@ -16,7 +16,7 @@ Route::get('/logout',function () {
 Route::post('/login',[UserController::class,'login'])->name('attemptLogin');
 
 Route::get('/register',function () {
-    return view('admin/register');
+    return view('auth.register');
 })->name('register');
 Route::post('/register',[UserController::class,'register'])->name('attemptRegister');
 
