@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\UserController;
 
-Route::get('/',function () {
+Route::get('/login',function () {
     return view('admin/login');
 })->name('login');
 
