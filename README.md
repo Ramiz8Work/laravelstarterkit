@@ -24,16 +24,8 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
    composer require ramiz/laravelstarterkit
    ```
 
-2. **Run Migrations**:
-   Run the package migrations to create the necessary database tables:
 
-
-   ```bash
-   php artisan migrate
-   ```
-
-
-3. **Publish Assets and Configuration**:
+2. **Publish Assets and Configuration**:
    Publish the package's assets and configuration files:
 
    ```bash
@@ -42,6 +34,17 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
   
   
    ```
+
+
+3. **Run Migrations**:
+   Run the package migrations to create the necessary database tables:
+
+
+   ```bash
+   php artisan migrate
+   ```
+
+
 
 
 ## Usage
