@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - SB Admin</title>
+        <title>Dashboard</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+        <script src="{{ asset('js/fontawesome.js') }}"></script>
 
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+        
         <style>
             .error-help-block{
                 color: red;
@@ -23,11 +24,11 @@
     </head>
     <body class="sb-nav-fixed">
         <!-- navbar -->
-        @include('admin.partials.nav')
+        @include('layouts.partials.nav')
 
         <div id="layoutSidenav">
             <!-- sidebar -->
-            @include('admin.partials.sidebar')           
+            @include('layouts.partials.sidebar')           
 
             <div id="layoutSidenav_content">
                 <main>
@@ -36,14 +37,16 @@
                     </div>
                 </main>
                 @yield('modal')
-                @include('admin.partials.footer')              
+                @include('layouts.partials.footer')              
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="{{ asset('js/bootstrap.js') }}" crossorigin="anonymous"></script>
+        <script src="{{ asset('js/sweetalert.js') }}"></script>
+       
         <script src="{{ asset('js/scripts.js') }}"></script>
+        <script src="{{ asset('js/jquery.js') }}"></script>
+
         <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
