@@ -33,7 +33,7 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
    ```bash
     php artisan migrate
    ```
-Add the following routes in your web.php file:
+4. Add the following routes in your web.php file:
 
    ``````
    Route::middleware(['auth'])->group(function(){
@@ -42,7 +42,7 @@ Add the following routes in your web.php file:
             return view('admin.dashboard');
          })->name('dashboard');
    });
-   
+
    ``````
 
 
