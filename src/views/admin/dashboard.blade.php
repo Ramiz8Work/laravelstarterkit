@@ -4,7 +4,6 @@
 @endsection
 
 @section('content')
-<h1>Ramiz</h1>
 @endsection
     
 @section('modal')

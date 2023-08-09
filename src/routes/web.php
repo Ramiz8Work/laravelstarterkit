@@ -10,7 +10,7 @@ Route::get('/login',function () {
 
 Route::get('/logout',function () {
     Auth::logout();
-    return route('login');
+    return to_route('login');
 })->name('logout');
 
 Route::post('/login',[UserController::class,'login'])->name('attemptLogin');
@@ -21,6 +21,3 @@ Route::get('/register',function () {
 Route::post('/register',[UserController::class,'register'])->name('attemptRegister');
 
 
-Route::middleware(['auth'])->group(function(){
-    
-});
