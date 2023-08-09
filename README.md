@@ -19,15 +19,14 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
    ```bash
    composer require ramiz/laravelstarterkit
    ```
-
-
+   
 2. **Publish Assets and Configuration**:
    Publish the package's assets and configuration files:
 
    ```bash  
   php artisan vendor:publish --provider="Ramiz\Laravelstarter\LaravelStarterServiceProvider"
    ```
-   
+
 3. **Run Migrations**:
    Run the package migrations to create the necessary database tables:
 
