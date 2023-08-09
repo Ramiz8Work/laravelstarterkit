@@ -13,7 +13,7 @@ class UserController extends Controller
     public function login(Request $request)
     {   
         if(Auth::attempt(['email'=>$request->email,'password'=>$request->password],$request->remember??null)){            
-            return to_route('category.index');
+            return to_route('dashboard');
         }else{
             return to_route('login');
         }        
