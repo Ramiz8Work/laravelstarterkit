@@ -1,7 +1,3 @@
-Certainly! Here's a sample README file for your package that provides basic authentication functionality and a starter admin panel template:
-
----
-
 # Laravel Auth and Admin Panel Package
 
 The Laravel Auth and Admin Panel Package is a versatile Laravel package that offers basic authentication functionality along with a starter admin panel template. It streamlines the process of setting up user authentication and provides a foundation for building admin panels in your Laravel projects.
@@ -30,10 +26,8 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
 
    ```bash  
   php artisan vendor:publish --provider="Ramiz\Laravelstarter\LaravelStarterServiceProvider"
-   
    ```
-
-
+   
 3. **Run Migrations**:
    Run the package migrations to create the necessary database tables:
 
