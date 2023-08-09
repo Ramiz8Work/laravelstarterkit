@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ramiz\\Laravelstarter\\LaravelStarterProvider"
+                "Ramiz\\Laravelstarter\\LaravelStarterServiceProvider"
             ]
         }
     }
