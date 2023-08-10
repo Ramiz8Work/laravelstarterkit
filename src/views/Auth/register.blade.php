@@ -23,8 +23,8 @@
                                         <form action="{{ route('attemptRegister') }}" method="post">
                                             @csrf
                                             <div class="form-floating mb-3">
-                                                <input name="name" class="form-control" id="inputEmail" type="text" />
-                                                <label for="inputEmail">Name</label>
+                                                <input name="name" class="form-control" id="inputName" type="text" placeholder="Enter your name"/>
+                                                <label for="inputName">Name</label>
                                             </div>
                                             <div class="form-floating mb-3">
                                                 <input name="email" class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
