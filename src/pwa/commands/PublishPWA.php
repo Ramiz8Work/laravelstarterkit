@@ -1,8 +1,7 @@
 <?php
 
-namespace Ramiz\LaravelStarter\pwa\commands;
+namespace Ramiz\Laravelstarter\pwa\commands;
 
-use Illuminate\Support\Facades\File;
 use Illuminate\Console\Command;
 
 class PublishPWA extends Command

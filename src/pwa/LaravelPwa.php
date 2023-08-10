@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramiz\LaravelStarter;
+namespace Ramiz\Laravelstarter;
 
 use Illuminate\Support\Facades\Facade;
 

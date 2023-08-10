@@ -1,12 +1,24 @@
 <?php
 
- namespace Ramiz\LaravelStarter;
+ namespace Ramiz\Laravelstarter;
 
 use Illuminate\Support\ServiceProvider;
-use Ramiz\LaravelStarter\pwa\commands\PublishPWA;
+use Ramiz\Laravelstarter\pwa\commands\PublishPWA;
 
  class LaravelStarterServiceProvider extends ServiceProvider
  {
+      
+    public function register()
+    {
+           $this->app->singleton('laravel-pwa:publish', function ($app) {
+             return new PublishPWA();
+           });
+    
+          $this->commands([
+              'laravel-pwa:publish',
+          ]);   
+    }
+    
     public function boot(){
          $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
          $this->loadViewsFrom(__DIR__.'/views', 'laravelstarter');
@@ -20,14 +32,4 @@ use Ramiz\LaravelStarter\pwa\commands\PublishPWA;
          ]);
     }   
     
-    public function register()
-    {
-           $this->app->singleton('laravel-pwa:publish', function ($app) {
-             return new PublishPWA();
-           });
-    
-          $this->commands([
-              'laravel-pwa:publish',
-          ]);   
-    }
  }

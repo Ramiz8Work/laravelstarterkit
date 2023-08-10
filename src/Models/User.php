@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramiz\LaravelStarter\Models;
+namespace Ramiz\Laravelstarter\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
