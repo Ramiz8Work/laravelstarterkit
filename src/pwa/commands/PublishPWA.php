@@ -1,6 +1,6 @@
 <?php
 
-namespace Ramiz\LaravelStarter\commands;
+namespace Ramiz\LaravelStarter\pwa\commands;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Console\Command;

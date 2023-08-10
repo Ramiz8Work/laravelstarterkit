@@ -3,7 +3,7 @@
  namespace Ramiz\LaravelStarter;
 
  use Illuminate\Support\ServiceProvider;
-use Ramiz\LaravelStarter\commands\PublishPWA;
+use Ramiz\LaravelStarter\pwa\commands\PublishPWA;
 
  class LaravelStarterServiceProvider extends ServiceProvider
  {
