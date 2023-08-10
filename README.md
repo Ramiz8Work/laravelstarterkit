@@ -7,7 +7,7 @@ The Laravel Auth and Admin Panel Package is a versatile Laravel package that off
 - User registration and login functionality.
 - User authentication with customizable views.
 - Admin panel starter template with responsive design.
-- Built-in user management features for administrators.
+- Built-in PWA ( Progressive Web App).
 
 ## Installation
 
@@ -24,16 +24,45 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
    Publish the package's assets:
 
    ```bash  
-    php artisan vendor:publish --provider="Ramiz\LaravelStarter\LaravelStarterServiceProvider"
+    php artisan vendor:publish --provider="Ramiz\Laravelstarter\LaravelStarterServiceProvider"
    ```
+3. **Install PWA files**:
 
-3. **Run Migrations**:
+   ```bash  
+   php artisan laravel-pwa:publish
+   ``````
+
+
+4. **Run Migrations**:
    Run the package migrations to create the necessary database tables:
 
    ```bash
     php artisan migrate
    ```
-4. Add the following routes in your web.php file:
+
+5. **Configure PWA**:
+      Add following code in root blade file in header section.
+
+      <!-- PWA  -->
+      <meta name="theme-color" content="#6777ef"/>
+      <link rel="apple-touch-icon" href="{{ asset('pwa.PNG') }}">
+      <link rel="manifest" href="{{ asset('/pwa/manifest.json') }}">
+
+
+      Add following code in root blade file in before close the body.
+
+
+      <script src="{{ asset('/pwa/sw.js') }}"></script>
+      <script>
+         if (!navigator.serviceWorker.controller) {
+            navigator.serviceWorker.register("/pwa/sw.js").then(function (reg) {
+                  console.log("Service worker has been registered for scope: " + reg.scope);
+            });
+         }
+      </script>
+
+
+6. Add the following routes in your web.php file:
 
    ``````
    Route::middleware(['auth'])->group(function(){
