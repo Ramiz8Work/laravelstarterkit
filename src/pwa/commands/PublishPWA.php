@@ -35,16 +35,17 @@ class PublishPWA extends Command
     public function handle()
     {
         $publicDir = public_path();
-        
-        $manifestTemplate = file_get_contents(__DIR__.'/../pwa/stubs/manifest.stub');
+        $stubsPath = dirname(__DIR__) . '/stubs';
+
+        $manifestTemplate = file_get_contents($stubsPath.'/manifest.stub');
         $this->createFile($publicDir. DIRECTORY_SEPARATOR, 'manifest.json', $manifestTemplate);
         $this->info('manifest.json file is published.');
         
-        $offlineHtmlTemplate = file_get_contents(__DIR__.'/../pwa/stubs/offline.stub');
+        $offlineHtmlTemplate = file_get_contents($stubsPath.'/offline.stub');
         $this->createFile($publicDir. DIRECTORY_SEPARATOR, 'offline.html', $offlineHtmlTemplate);
         $this->info('offline.html file is published.');     
         
-        $swTemplate = file_get_contents(__DIR__.'/../pwa/stubs/sw.stub');
+        $swTemplate = file_get_contents($stubsPath.'/sw.stub');
         $this->createFile($publicDir. DIRECTORY_SEPARATOR, 'sw.js', $swTemplate);
         $this->info('sw.js (Service Worker) file is published.');     
 
