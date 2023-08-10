@@ -34,7 +34,8 @@ class PublishPWA extends Command
 	
     public function handle()
     {
-        $publicDir = public_path();
+        $publicDir = public_path('pwa');
+        
         $stubsPath = dirname(__DIR__) . '/stubs';
 
         $manifestTemplate = file_get_contents($stubsPath.'/manifest.stub');
