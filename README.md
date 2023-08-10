@@ -43,6 +43,7 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
 5. **Configure PWA**:
       Add following code in root blade file in header section.
 
+
       <!-- PWA  -->
       <meta name="theme-color" content="#6777ef"/>
       <link rel="apple-touch-icon" href="{{ asset('pwa.PNG') }}">
