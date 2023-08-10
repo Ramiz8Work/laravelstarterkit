@@ -26,19 +26,20 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
    ```bash  
     php artisan vendor:publish --provider="Ramiz\Laravelstarter\LaravelStarterServiceProvider"
    ```
-3. **Install PWA files**:
-
-   ```bash  
-   php artisan laravel-pwa:publish
-   ``````
 
 
-4. **Run Migrations**:
+3. **Run Migrations**:
    Run the package migrations to create the necessary database tables:
 
    ```bash
     php artisan migrate
    ```
+
+4. **Install PWA files**:
+
+   ```bash  
+   php artisan laravel-pwa:publish
+   ``````
 
 5. **Configure PWA**:
       Add following code in root blade file in header section.
@@ -63,7 +64,8 @@ To integrate the Laravel Auth and Admin Panel Package into your Laravel project,
          }
       </script>
       ```````
-
+   
+   Update public/pwa/manifest.stub file for basic pwa settings.
 
 6. Add the following routes in your web.php file:
 
