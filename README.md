@@ -90,6 +90,9 @@ The package provides user authentication routes and views out of the box. You ca
 
 The admin panel starter template can be accessed by login in your browser. It includes a dashboard, user management pages, and a responsive design. You can customize and extend the admin panel to suit your project's needs.
 
+### Progressive Web App (PWA)
+
+A Progressive Web App (PWA) is a modern web application that combines the best of both web and mobile app experiences. PWAs are designed to work seamlessly across various devices and platforms, providing users with fast loading times, offline access, and an engaging, app-like interface. By leveraging service workers and web app manifests, PWAs deliver enhanced performance, reliable functionality, and the ability to be added to the user's home screen. Embrace the future of web development by incorporating PWA features into your web application.
 
 ## License
 
