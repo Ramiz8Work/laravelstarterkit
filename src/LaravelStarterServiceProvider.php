@@ -29,6 +29,7 @@ use Ramiz\Laravelstarter\pwa\commands\PublishPWA;
                __DIR__.'/database/migrations/' => database_path('migrations'),
                __DIR__.'/Public' => public_path('/'),
                __DIR__.'/Http/Controllers' => app_path('Http/Controllers'),
+               
          ]);
     }   
     
