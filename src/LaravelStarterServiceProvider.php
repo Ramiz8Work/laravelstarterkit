@@ -2,7 +2,7 @@
 
  namespace Ramiz\LaravelStarter;
 
- use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 use Ramiz\LaravelStarter\pwa\commands\PublishPWA;
 
  class LaravelStarterServiceProvider extends ServiceProvider

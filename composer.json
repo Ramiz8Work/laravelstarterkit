@@ -29,7 +29,7 @@
                 "Ramiz\\Laravelstarter\\LaravelStarterServiceProvider"
             ],
             "aliases": {
-                "LaravelPwa": "Ramiz\\Laravelstarter\\src\\pwa\\LaravelPwa"
+                "LaravelPwa": "Ramiz\\Laravelstarter\\pwa\\LaravelPwa"
             }
         }
     }
