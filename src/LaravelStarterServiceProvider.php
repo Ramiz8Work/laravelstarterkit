@@ -3,6 +3,7 @@
  namespace Ramiz\LaravelStarter;
 
  use Illuminate\Support\ServiceProvider;
+use Ramiz\LaravelStarter\commands\PublishPWA;
 
  class LaravelStarterServiceProvider extends ServiceProvider
  {
@@ -21,6 +22,12 @@
     
     public function register()
     {
-        
+           $this->app->singleton('laravel-pwa:publish', function ($app) {
+             return new PublishPWA();
+           });
+    
+          $this->commands([
+              'laravel-pwa:publish',
+          ]);   
     }
  }

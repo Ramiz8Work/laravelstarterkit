@@ -2,6 +2,12 @@
     "name": "ramiz/laravelstarterkit",
     "description": "its a starter kit",
     "type": "library",
+    "keywords": [
+        "laravel-pwa",
+        "pwa-laravel",
+        "laravel",
+        "php"
+    ],
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -14,12 +20,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "illuminate/support": ">=5.4"
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "Ramiz\\Laravelstarter\\LaravelStarterServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "LaravelPwa": "Ramiz\\Laravelstarter\\src\\pwa\\LaravelPwa"
+            }
         }
     }
 }
